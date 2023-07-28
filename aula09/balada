@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : balada
+# Data     : 27/07/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: teste de idade
+#---------------------------------------
+# Uso: verificar idade da pessoa
+#---------------------------------------
+
+#Teste se a pessoa pode entrar em uma balada que 
+#e apenas para maiores de idades [+=18 anos]
+
+clear
+
+#variaveis
+pode="Tudo certo chefia, pode entrar!"
+naopode="Infelizmente voce nao vai poder entrar aqui, sinto muito!"
+minima="Tudo certo jovem, voce tem a idade minima"
+riscos="============================================================"
+
+#mensagens
+
+echo "$riscos"
+read -p "qual a sua idade? " idade
+echo "$riscos"
+echo "Verificando informacoes"
+echo "$riscos"
+sleep 2
+
+#teste de erros
+
+#[[ ! $num =~ ^[0-9]+$ ]]  && echo "Erro! digite sua *idade*" && exit 1
+
+#verifica se a idade do usuario e *menor ou igual* a 17
+[[ $idade -le 17  ]] && echo "$naopode" && exit 1
+
+#report normais
+
+#verifica se a idade do usuario e *igual* a 18
+[[ $idade -eq 18 ]] && echo "$minima" && exit 0
+
+#verifica se a idade do usuario e *maior* que 18
+[[ $idade -gt 18 ]] && echo "$pode" && exit 0

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+echo "============Ficha Pessoal============"
+read -p "Digite seu nome completo: " nome
+read -p "Digite seu CPF: " cpf
+read -p read -p "Digite seu endereço: " end
+read -p read -p "Digite sua idade: " idade "anos"
+
+echo " Suas informações: 
+Nome: $nome
+Idade: $idade
+CPF: $cpf
+Endereço: $end
+"
+echo "Olá $nome, espero que esteja bem! conferi aqui que o seu cpf é: $cpf, sua idade é de: $idade, e seu endereço: $end."

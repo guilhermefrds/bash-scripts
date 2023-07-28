@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+#pede o nome do app pro user
+read -p "Qual programa deseja desinstalar? " package
+
+#atualiza oque tem que atualizar
+flatpak update
+
+#desinstala o programa digitado
+flatpak uninstall $package
+

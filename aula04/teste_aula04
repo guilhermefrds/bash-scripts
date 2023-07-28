@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+#este script verifica se voce pode entrar em uma balada
+#ou nao, caso tenha 18 anos ou mais voce pode, caso con-
+#trario nao.
+
+
+#coletar informacoes do usuario
+
+echo "=------------------------------------------------------------------------------------------------="
+echo "Para podermos validar a sua entrada precisamos de algumas informacoes, como seu nome e sua idade!"
+echo "=------------------------------------------------------------------------------------------------="
+
+yes="Voce nao pode entrar na balada!"
+no="Voce pode entrar na balada!"
+
+read -p "Digite seu nome: " nome
+read -p "Agora digite sua idade: " idade
+
+
+echo $nome
+echo $idade
+
+[[ $idade -lt 18 ]] echo $no || echo $yes && exit 1
+
+
+exit 0
+

@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+#este script cria um novo script
+
+echo $1
+
+
+[[ $# -ne 1 ]] && echo "Preciso de *um* nome de arquivo" && exit 1
+
+#pergunta o nome que tera o script alocando o nome em uma variavel simples
+#read -p "Nome do script: " name
+
+#cria o arquivo com a variavel definida loco acima
+touch $1
+
+#escreve a primeira linha hashbang no arquivo recem criado
+#echo -n "#!/usr/bin/env bash" | cat > $name
+echo -n "#!/usr/bin/env bash" | cat > $1
+
+#da a permissao de execucao do arquivo somente para o usuario dono do arquivo, ou seja, o owner
+#chmod u+x $name
+chmod u+x $1
+
+#vim $name
+vim $1

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+echo "------------------------------"
+read -p "Digite seu nome: " nome
+echo "Muito prazer, $nome!"
+echo "------------------------------"
+
+

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+clear
+echo "Informações muito importantes!"
+echo "----------------------------------"
+echo -n "Usuário: "
+whoami
+echo -n "Maquina: "
+hostname
+echo -n "Tempo ativo: "
+uptime -p
+echo -n "Kernel: "
+uname -rms
+echo "----------------------------------"

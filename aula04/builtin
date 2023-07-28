@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+#testa se foi passado um argumento
+
+msg="E preciso informar o nome de um comando valido!"
+
+[[ $# -ne 1 ]] && echo $msg && exit 1
+
+
+
+#executa "help" para vereficar se vai conseguir 
+#mostrar a ajuda do comando (sucesso) ou nao (erro)
+
+help $1  &> /dev/null
+
+[[ $? -eq 0 ]] && echo "E builtin!" || echo "Nao e builtin..."
+
+exit 0

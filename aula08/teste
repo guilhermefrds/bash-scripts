@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : teste
+# Data     : 27/07/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+echo "PID da sessao do shell do script: $$"
