@@ -1,0 +1,30 @@
+#fazer um scrpit com arrays, dizendo que tal pessoa tem tantas qualidades, #e que caso ela queira saber quais sao, e so digitar um numero de um a 10
+#e la vao estar as qualidades, em cada numero tera uma qualidade diferentes,
+#declare -A qualidades
+#qualidades[1]="atenciosa"
+#qualidades[2]="romantica"
+#e assim por diante
+#
+#
+
+
+
+guilherme@guilherme-H310M-M-2-2-0:~/learnings/bash-scripts/aula10$ carro[fiat]="147"
+guilherme@guilherme-H310M-M-2-2-0:~/learnings/bash-scripts/aula10$ carro[vw]="fusca"
+guilherme@guilherme-H310M-M-2-2-0:~/learnings/bash-scripts/aula10$ carro[ford]="corcel 74"
+guilherme@guilherme-H310M-M-2-2-0:~/learnings/bash-scripts/aula10$ vim anotacao 
+guilherme@guilherme-H310M-M-2-2-0:~/learnings/bash-scripts/aula10$ echo ${carro[fiat]}
+147
+guilherme@guilherme-H310M-M-2-2-0:~/learnings/bash-scripts/aula10$ echo ${carro[vw]}
+fusca
+guilherme@guilherme-H310M-M-2-2-0:~/learnings/bash-scripts/aula10$ echo ${carro[ford]}
+corcel 74
+guilherme@guilherme-H310M-M-2-2-0:~/learnings/bash-scripts/aula10$ echo ${#carro[@]}
+3
+guilherme@guilherme-H310M-M-2-2-0:~/learnings/bash-scripts/aula10$ echo ${!carro[*]}
+vw ford fiat
+guilherme@guilherme-H310M-M-2-2-0:~/learnings/bash-scripts/aula10$ echo ${!carro[@]}
+vw ford fiat
+guilherme@guilherme-H310M-M-2-2-0:~/learnings/bash-scripts/aula10$ echo ${carro[@]}
+fusca corcel 74 147
+

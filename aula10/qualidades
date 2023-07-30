@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : qualidades
+# Data     : 28/07/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+
+#arrays indexadas
+
+qualidades=("cheirosa" "linda" "meiga" "amorosa" "gentil" "educada" "simpatica" "atraente" "humilde" "focada" "gostosa")
+
+#variaveis
+nome1="pessoa2"
+nome2="pessoa1"
+linhas="===================================================================================="
+
+#mensagem - inicio
+echo "$linhas"
+echo "Seja bem vindo ao script que retorna as suas qualidades! feito por $nome1 para $nome2"
+read -p "Temos uma lista de 10 qualidades, digite um numero de 0 a 10: " num
+echo "$linhas"
+echo "Verificando..."
+sleep 2
+echo "$linhas"
+
+#tratar erros - errors
+
+
+
+#mensagens normais - success
+echo "Voce escolheu o numero $num, que corresponde a qualidade: ${qualidades[$num]}"
+
+
+

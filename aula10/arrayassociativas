@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : arrayassociativas
+# Data     : 28/07/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+
+#arrays associativas
+
+echo "Exemplo de trabalho com arrays associativas..."
+
+declare -A aluno
+declare -A nota
+
+aluno[Joao]="Joao da Silva"
+aluno[Jose]="Jose Pedro"
+aluno[Maria]="Maria Antonieta"
+aluno[Sofia]="Sofia Neto"
+aluno[joao]="Fatima Bernardes"
+aluno[joao]="Antonio da Paixao"
+
+nota[Joao]="10"
+nota[Jose]="9"
+nota[Maria]="10"
+nota[Sofia]="9"
+nota[Fatima]="8"
+nota[Antonio]="7"
+
+echo "Os indentificadores (indices) dos alunos sao: 
+${!aluno[*]}
+
+E os alunos sao: 
+${aluno[*]}
+
+"
+
+
+exit 0

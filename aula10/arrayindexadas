@@ -12,20 +12,18 @@
 
 clear
 
-echo "
-Exemplo de trabalho com array indexadas...
+echo "\
+Exemplo de arrays indexadas...
 "
+read -p "Digite um numero entre 0 e 5: " numero
 
 frutas=("banana" "laranja" "abacate" "limao" "cereja" "abacaxi")
-cores=("amarela" "amarela" "verde" "verde" "vermelha" "amarela")
+cores=("amarela" "laranja" "verde" "verde" "vermelha" "amarela")
 
-read -p "Digite um numero entre 0 a 5! Saindo..." numero
+[[ ! $numero =~ ^[0-5]$ ]] \
+	&& echo -e "\nTem que ser um numero entre 0 e 5! Saindo...\n" \
+	&& exit 1
 
-[[ $numero =~ ^[0-5]$ ]] \
-    && echo -e "\nTem que ser um numero entre 0 e 5! Saindo!...\n"
-    && exit 1
+echo "Voce escolheu ${frutas[$numero]}, que e uma fruta ${cores[$numero]}."
 
-echo "
-Voce escolheu ${frutas[$numero]}, que e uma fruta ${cores[$numero]}
-"
 exit 0
