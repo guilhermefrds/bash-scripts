@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : operadores-aritmeticos
+# Data     : 30/07/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+
+#mensagem
+echo "
+Operadores Aritmeticos Basicos: 
+	**		exponenciacao
+	*, /, %		multiplicacao, divisao, resto dedivisao
+	+, - 		adicao, subtracao
+	
+Digite qualquer expressao com os operadores acima
+e tecle enter para efetuar o calculo.
+
+Exemplo: 2 + 2
+"
+read -p "Sua expressao: " expressao
+
+#variaveis
+
+
+#tratamento de erros
+
+
+
+
+
+
+
+#mensagens normais
+# metodo let
+
+sinlet="'let ""$expressao""'"
+echo "
+- Utilizando o comando let: $sinlet:
+"
+let "valor=$expressao"
+echo "$expressao = $valor"
+
+#metodo composto
+
+composto="'(( $expressao ))'"
+echo "
+- Utilizando o comando composto: $composto:
+"
+(( valcor="$expressao" ))
+echo "$expressao = $valcor"
+
+#metodo expansao aritmetica
+
+arit="$(( $expressao ))"
+aritedit="'$'(( $expressao ))'"
+echo "
+- Utiilizando o comando de expansao aritmetica: '$aritedit':
+"
+echo "$expressao = $arit"
+
+#metodo alterando atributo de inteiro
+
+atrint="declare -i var="$expressao""
+valint=$expressao
+
+echo "
+- Utilizando o comando de alterar o atributo de inteiro: '$atrint':
+"
+declare -i var="$expressao"
+echo "$expressao = $var " 
+
+exit 0

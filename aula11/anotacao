@@ -1,0 +1,10 @@
+#+= operador de atribuicao (concatenacao de strings)
+
+#nome=Joao
+#nome+=" da Silva"
+#echo $nome
+#Joao da silva
+
+nome="$nome da silva"
+echo $nome
+Joao da silva da Silva

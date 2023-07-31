@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : pegadinha
+# Data     : 30/07/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+
+#reunir informacoes do usuario
+clear
+read -p "Digite um nome: " nome
+read -p "Digite o nome de uma revista: " revista
+read -p "Digite um nome de uma peca de roupa: " roupa
+echo "
+Voce escolheu: $nome, $revista, $roupa.
+"
+read -p "Digite um numero de 1 a 3: " numero
+
+frase[1]="$nome saiu na capa da $revista so de $roupa!"
+frase[2]="$nome so consegue ler a $revista usando $roupa!"
+frase[3]="$nome aprendeu na revista $revista que usar $roupa e legal!"
+
+echo "
+${frase[$numero]}
+"
+
+exit 0
+
