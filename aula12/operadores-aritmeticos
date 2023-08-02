@@ -58,9 +58,9 @@ echo "$expressao = $valcor"
 #metodo expansao aritmetica
 
 arit="$(( $expressao ))"
-aritedit="'$'(( $expressao ))'"
+aritedit="'\$(( $expressao ))'"
 echo "
-- Utiilizando o comando de expansao aritmetica: '$aritedit':
+- Utiilizando o comando de expansao aritmetica: $aritedit:
 "
 echo "$expressao = $arit"
 

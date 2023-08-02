@@ -1,0 +1,3 @@
+comando break --> interrompe execucao do looping
+
+comando continue --> nao executa comandos e continua o loop

@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : teste-for
+# Data     : 01/08/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+
+echo "--------------"
+
+for n in {1..5}; do
+	>> arquivo$n
+done
+
+ls -1 arq*
+echo "--------------"
+
+for f in arquivo*; do
+	mv $f $f.txt
+done
+
+ls -1 arq*
+echo "--------------"
