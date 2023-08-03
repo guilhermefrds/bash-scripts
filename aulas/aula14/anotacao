@@ -1,0 +1,26 @@
+
+${nome:-valor_padrao} expande para "valor_padrao" se "nome" nao existe ou é nulo
+${nome:=valor_padrao} expande para "valor_padrao" se "nome" nao existe e atribui "valor_padrao" a "nome"
+${nome:+valor} 	      expande para "valor" se "nome" existe, ou nada se "nome" nao existe
+${nome:?mensagem}     escreve "mensagem" na saida de erro se "nome" nao existe ou é nulo
+
+
+
+${variavel^} Primeiro caractere em caixa alta 
+${variavel^^} Todos caracteres em caixa alta
+${variavel,} Primeiro caractere em caixa baixa
+${variavel,,} Todos os caracteres em caixa baixa
+
+
+#aparando strings 
+caracteres especiais para representar padroes: * ? [...]
+
+${variavel##padrão} --> todo inicio da string sera aparado ate a primeira ocorrencia do padrao
+
+
+${variavel##padrao} --> todo o inicio da string sera aparado ate a ultima
+
+
+exemplo: arquivo="https://teste.com/exemplo/arquivo.zip"
+	 echo ${arquivo##*/}
+	 arquivo.zip	
