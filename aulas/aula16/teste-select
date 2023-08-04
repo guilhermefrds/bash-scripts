@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : teste-select
+# Data     : 03/08/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+
+read -p "Digite seu endereco: " end
+read -p "Digite seu nome: " nome
+read -p "Digite sua idade: " idade
+
+echo "Selecione a opcao que deseja ver conforme os numeros de cada uma: "
+
+PS3="Escolha a sua opcao: "
+
+select info in endereco nome idade; do
+	break 
+done
+
+sleep 1
+
+case $info in 
+	endereco) echo "Seu endereco: $end" ;;
+	nome) echo "Seu nome: $nome" ;;
+	idade) echo "Sua idade: $idade" ;;
+esac
+
+infos=(endereco nome idade)
+while true; do
+
+    clear
+
+    echo "1. ${infos[0]}"
+    echo "2. ${infos[1]}"
+    echo "3. ${infos[2]}"
+    echo "4. Sair"
+
+    read -p "Escolha o numero da sua opcao: " opcao
+    
+    [[ $opcao -eq 4 ]] && break 
+    echo "Voce escolheu ${infos[$((opcao - 1))]}."
+
+    read -p "Tecle algo para continuar..." continua
+
+done
+
+
+
+exit 0 
+
+#Rua teste teste teste
+#Guilherme Fernandes
+#21

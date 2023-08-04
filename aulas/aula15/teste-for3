@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : teste-for3
+# Data     : 03/08/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+
+for n in {1..10}; do
+	[[ $n -gt 5 ]] && break || echo $n
+done
+
+echo "-------------"
+
+for n in {1..10}; do
+	[[ $n -lt 6 ]] && continue || echo $n
+done

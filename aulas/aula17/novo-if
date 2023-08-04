@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : novo-if
+# Data     : 04/08/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: testando-novo-if 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+
+teste=1
+
+if ((teste)); then
+        echo "Status $? - Verdadeiro"
+else
+        echo "Status $? - Falso"
+fi
+
+echo "O valor de teste eh $teste"
+
+exit 0

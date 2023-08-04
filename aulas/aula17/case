@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : case
+# Data     : 04/08/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: testando-case 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+
+#case VALOR in
+#	PADRAO) BLOCO DE COMANDOS ;;
+#	PADRAO) BLOCO DE COMANDOS ;;
+#	PADRAO) BLOCO DE COMANDOS ;;
+
+fruta=banana
+
+case $fruta in
+	banana) echo "$fruta eh amarela" ;;
+	abacate) echo "$fruta eh verde" ;;
+	morango) echo "$fruta eh vermelha" ;;
+esac
+
+exit 0

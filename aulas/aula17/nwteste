@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : nwteste
+# Data     : 04/08/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: nwteste 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+
+read -p "Digite seu endereco: " end
+read -p "Digite seu nome: " nome
+read -p "Digite sua idade: " idade
+
+infos=(endereco nome idade)
+while true; do
+
+    clear
+
+    echo "1. ${infos[0]}"
+    echo "2. ${infos[1]}"
+    echo "3. ${infos[2]}"
+    echo "4. Sair"
+
+    read -p "Escolha o numero da sua opcao: " opcao
+    
+    [[ $opcao -eq 4 ]] && break 
+    
+    echo "Voce escolheu ${infos[$((opcao - 1))]}."
+
+    escolha=${infos[$((opcao - 1))]}
+
+    case $escolha in 
+        endereco) echo "Seu endereco: $end" ;;
+        nome) echo "Seu nome: $nome" ;;
+        idade) echo "Sua idade: $idade" ;;
+    esac
+
+    read -p "Tecle algo para continuar..." continua
+
+done
+
+#Rua teste teste teste
+#Guilherme Fernandes
+#21

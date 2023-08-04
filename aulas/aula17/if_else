@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : if_else
+# Data     : 03/08/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+
+#if (COMANDO); then
+#   (COMANDO) #(status 0/sucessfull)
+#elif (COMANDO); then
+#   (COMANDOS SE RETORNOU 0)
+#else
+#   (COMANDO SE ERRO/FALSE)
+#fi
+
+padrao=if*
+
+if ls $padrao &> /dev/null ; then
+    echo "Status $? - Verdadeiro"
+    echo O nome do arquivo encontrado e: if*
+#elif ls banana &> /dev/null ; then
+#    echo So achei o arquivo if*
+else
+    echo "Status $? - Falso"
+    echo Nao encontrei o padrao $padrao
+fi
+
+exit 0

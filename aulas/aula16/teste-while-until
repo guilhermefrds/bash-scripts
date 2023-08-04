@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : teste
+# Data     : 03/08/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+## exemplo while
+
+n=0
+while : ; do
+       [[ $n -lt 5 ]] && echo $n || break
+       ((n++))
+done
+exit 0
+
+
+#n=0
+#while true; do
+#       [[ $n -lt 5 ]] && echo $n || break
+#       ((n++))
+#done
+#exit 0
+
+#enquanto "n" for menor que 5, faca
+#n=0
+#while [[ $n -lt 5 ]]; do
+#	echo $n
+#	((n++))
+#done
+
+
+#enquanto "n" for "true" faca um echo
+#n=infinito
+#while true; do
+#        echo $n 
+#done
+
+
+
+##exemplo until
+
+#n=0
+#until false; do
+#       [[ $n -lt 5 ]] && echo $n || break
+#       ((n++))
+#done
+#exit 0
+
+#enquanto "n" for "false" faca um echo
+#n="infinito until"
+#until false; do
+#        echo $n 
+#done
+
+#exit 0
+
+#ate que "n" seja igual a 5, faca
+#n=0
+#until [[ $n -eq 5 ]]; do
+#        echo $n
+#        ((n++)) 
+#done
+#echo "---------"
+#echo $n

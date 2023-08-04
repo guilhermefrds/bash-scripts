@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : teste-if
+# Data     : 04/08/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: testando_if 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+
+read -p "Adivinhe o nome da fruta: " fruta
+
+if [[ $fruta = banana ]]; then
+	echo "Status $? - Verdadeiro"
+	echo "Acertou! o nome da fruta eh: $fruta."
+else
+	echo "Status $? - Falso"
+	echo "Errou! o nome da fruta eh banana"
+fi
+
+exit 0

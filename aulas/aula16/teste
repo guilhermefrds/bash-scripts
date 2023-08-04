@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : teste
+# Data     : 03/08/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+fruta=(banana laranja abacate)
+while true; do
+
+    clear
+
+    echo "1. Banana"
+    echo "2. Laranja"
+    echo "3. Abacate"
+    echo "4. Sair"
+
+    read -p "Escolha o numero da sua opcao: " opt
+    
+    [[ $opt -eq 4 ]] && break 
+    echo "Voce escolheu ${fruta[$((opt - 1))]}."
+
+    read -p "Tecle algo para continuar..." continua
+
+done
