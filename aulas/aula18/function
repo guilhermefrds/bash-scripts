@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+#---------------------------------------
+# Autor    : guilherme
+# Script   : function
+# Data     : 04/08/23
+# Versao   : Brasileira :)
+# Licenca  : EAD
+# Descricao: new-function 
+#---------------------------------------
+# Uso: Fins educativos
+#---------------------------------------
+clear
+
+#function NOME {
+#	COMANDOS
+#}
+
+#NOME() {
+#	COMANDOS
+#}
+
+#function NOME {COMANDO1; COMANDO2; ... COMANDON; }
+
+
+
+#oi() {
+#	echo "Oi eu sou $1"
+#}
+
+#case $1 in
+#	1) nome=Goku	;;
+#	2) nome=Vegeta	;;
+#	3) nome=Gohan	;;
+#	*) nome=Anonimo	;;
+#esac
+
+#oi $nome
+
+#calcula() {
+#	return $(( 2 + 2 ))
+#}
+
+#calcula
+
+#echo $?
+
+calcula() {
+	echo $FUNCNAME
+	echo ${FUNCNAME[0]}
+}
+
+calcula
+
+exit 0

@@ -16,12 +16,12 @@ clear
 #	PADRAO) BLOCO DE COMANDOS ;;
 #	PADRAO) BLOCO DE COMANDOS ;;
 
-fruta=banana
 
-case $fruta in
-	banana) echo "$fruta eh amarela" ;;
-	abacate) echo "$fruta eh verde" ;;
-	morango) echo "$fruta eh vermelha" ;;
+case ${1,,} in
+	banana|abacaxi) echo "$1 eh amarela" 				;;
+	abacate|uva|limao) echo "$1 eh verde" 				;;
+	morango|maca|tomate|pitanga) echo "$1 eh vermelha" 		;;
+	     *) echo "Nao sei a cor de $1" 				;;
 esac
 
 exit 0

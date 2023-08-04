@@ -32,7 +32,7 @@ while true; do
 
     escolha=${infos[$((opcao - 1))]}
 
-    case $escolha in 
+    case ${escolha,,} in 
         endereco) echo "Seu endereco: $end" ;;
         nome) echo "Seu nome: $nome" ;;
         idade) echo "Sua idade: $idade" ;;
